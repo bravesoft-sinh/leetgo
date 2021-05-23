@@ -46,13 +46,13 @@ func bubbleSort(arr []int) []int {
 func selectionSort(arr []int) []int {
 	var n = len(arr)
 	for i := 0; i < n; i++ {
-		var indexMin = i
+		var minIndex = i
 		for j := i + 1; j < n; j++ {
-			if arr[j] < arr[indexMin] {
-				indexMin = j
+			if arr[j] < arr[minIndex] {
+				minIndex = j
 			}
 		}
-		swap(arr, i, indexMin)
+		swap(arr, i, minIndex)
 	}
 	return arr
 }

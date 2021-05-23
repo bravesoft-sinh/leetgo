@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var arr = [5]int{2, 3, 1, 5, 4}
-	arr = bubleSort(arr)
+	arr = bubbleSort(arr)
 	printArray(arr)
 	arr = sort([5]int{2, 3, 1, 5, 4})
 	printArray(arr)
@@ -22,7 +22,7 @@ func sort(arr [5]int) [5]int {
 	}
 	return arr
 }
-func bubleSort(arr [5]int) [5]int {
+func bubbleSort(arr [5]int) [5]int {
 	var n = len(arr)
 	for i := 0; i < n; i++ {
 		for j := 0; j < n-i-1; j++ {

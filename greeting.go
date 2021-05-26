@@ -8,7 +8,7 @@ import (
 func main() {
 	fmt.Println("1 + 2 = ", add(1, 2))
 	go say("world")
-	say("hello")
+	//say("hello")
 }
 
 func add(a int, b int) int {
